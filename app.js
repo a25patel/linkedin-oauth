@@ -9,6 +9,7 @@ require('dotenv').load()
 var passport = require('passport');
 var LinkedInStrategy = require('passport-linkedin-oauth2').Strategy
 var authRoutes = require('./routes/auth');
+var database = require('monk')('localhost/linkedin-oauth-demo');
 
 
 

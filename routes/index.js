@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var unirest = require('unirest');
+var database = require('monk')('localhost/linkedin-oauth-demo');
 
 
 /* GET home page. */
